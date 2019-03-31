@@ -10,6 +10,10 @@ public class BeatMaker : MonoBehaviour
     public Bouncer mapEl;
     public int size;
     public bool isGenerating;
+    public int beatMax;
+    public int beatCount;
+    public float offBeatBpm;
+    public bool offBeat;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +24,7 @@ public class BeatMaker : MonoBehaviour
             {
                 Bouncer cube = Instantiate(mapEl);
                 Vector3 tempPos = transform.position;
-                tempPos.z = i * 2;
+                tempPos.z += i * 2;
                 cube.transform.position = tempPos;
                 cube.master = this;
             }
@@ -35,11 +39,32 @@ public class BeatMaker : MonoBehaviour
 
     private void FixedUpdate()
     {
-        tick += bpm;
+        if (beatCount < beatMax)
+        {
+            tick += bpm;
+        }
+        else
+        {
+            tick += offBeatBpm;
+        }
         if (tick > 1)
         {
             tick = 0;
-            beat = !beat;
+            if (!offBeat)
+            {
+                beat = !beat;
+                beatCount++;
+            }
+            if (offBeat)
+            {
+                offBeat = !offBeat;
+                beatCount = 0;
+            }
+            if (beatCount == beatMax)
+            {
+                offBeat = true;
+            }
+
         }
     }
 }

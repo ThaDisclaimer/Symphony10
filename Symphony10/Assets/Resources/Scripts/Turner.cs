@@ -36,8 +36,9 @@ public class Turner : MonoBehaviour
 
     public void Turn()
     {
-        transform.position = new Vector3(transform.position.x, Mathf.Lerp(curTurn, minTurn, t), transform.position.z);
+        Vector3 currentAngle = new Vector3(transform.rotation.x, transform.rotation.y, Mathf.Lerp(curTurn, minTurn, t));
 
+        transform.eulerAngles = currentAngle;
         // .. and increase the t interpolater
         t += fadeSpeed * Time.deltaTime;
 
