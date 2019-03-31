@@ -43,7 +43,7 @@ public class SoundControl : MonoBehaviour
 
     public void Progress()
     {
-        playerState.setParameterValue("Progress", (float)(master.transform.position.z) / 20);
+        playerState.setParameterValue("Progress", (float)(master.transform.position.z) / 50);
     }
     public void Death()
     {
