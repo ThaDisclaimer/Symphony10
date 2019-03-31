@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{10eec7a0-d963-41ed-b79b-985b4afbe158}">
+        <property name="name">
+            <value>Start Menu</value>
+        </property>
+        <relationship name="folder">
+            <destination>{af85bab4-17d9-4342-987a-bb8b9f111605}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{1e930d79-a4f0-4615-b0df-5642c08e3c3f}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{1e930d79-a4f0-4615-b0df-5642c08e3c3f}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>
