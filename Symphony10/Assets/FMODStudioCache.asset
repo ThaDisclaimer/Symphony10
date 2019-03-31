@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114984946347742512}
-  - {fileID: 114832363022540656}
+  - {fileID: 114130720709414658}
   EditorEvents:
   - {fileID: 114581817195134030}
   - {fileID: 114811365132426282}
   - {fileID: 114740821130806494}
   - {fileID: 114135842129685522}
-  - {fileID: 114713524447391596}
-  MasterBankRef: {fileID: 114832363022540656}
+  - {fileID: 114764228251063488}
+  MasterBankRef: {fileID: 114130720709414658}
   StringsBankRef: {fileID: 114984946347742512}
-  stringsBankWriteTime: 636896312008182467
+  stringsBankWriteTime: 636896326124717018
   cacheVersion: 2
 --- !u!114 &114012963061996152
 MonoBehaviour:
@@ -41,6 +41,42 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114057382522695110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Death
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114130720709414658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Git\Symphony10\Symphony10\Assets\FMOD\BEETHOVEN_GJ_2019\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636896326124687097
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1487872
+  Exists: 1
 --- !u!114 &114135842129685522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56,7 +92,7 @@ MonoBehaviour:
   Path: event:/Obstacles/Walls Below
   guid: bab213283010d14ea76d73d5a2690d11
   Banks:
-  - {fileID: 114832363022540656}
+  - {fileID: 114130720709414658}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -65,6 +101,22 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 22400
 --- !u!114 &114450929249687006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 2
+  Default: 0
+--- !u!114 &114472698180142676
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,7 +147,7 @@ MonoBehaviour:
   Path: event:/Obstacles/Crusher
   guid: 0e345c0bcf7ad14fa86ab9df6cbcf936
   Banks:
-  - {fileID: 114832363022540656}
+  - {fileID: 114130720709414658}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -141,15 +193,38 @@ MonoBehaviour:
   Path: event:/Music
   guid: 6ba3ae2e952e514cae199e4742eda6c8
   Banks:
-  - {fileID: 114832363022540656}
+  - {fileID: 114130720709414658}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114450929249687006}
-  - {fileID: 114012963061996152}
+  - {fileID: 114472698180142676}
+  - {fileID: 114057382522695110}
   MinDistance: 0
   MaxDistance: 0
+  Length: 20800
+--- !u!114 &114764228251063488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Obstacles/Gates
+  guid: be612bbf61552d40914c799402faaf24
+  Banks:
+  - {fileID: 114130720709414658}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
   Length: 20800
 --- !u!114 &114811365132426282
 MonoBehaviour:
@@ -166,7 +241,7 @@ MonoBehaviour:
   Path: event:/Movement
   guid: 55e14115dd79fe4ead82644a0284c246
   Banks:
-  - {fileID: 114832363022540656}
+  - {fileID: 114130720709414658}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -207,9 +282,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\FMOD\BEETHOVEN_GJ_2019\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636896312008182467
+  lastModified: 636896326124717018
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 920
+    Value: 916
   Exists: 1

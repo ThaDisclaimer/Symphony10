@@ -8,6 +8,10 @@ public class Player : MonoBehaviour
     public Animator animCont;
     public float pose;
     public float step;
+    public enum gamestate { };
+    public gamestate state;
+    public SoundControl sc;
+    public float death;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +34,7 @@ public class Player : MonoBehaviour
         if (Input.anyKeyDown)
         {
             pose = Random.Range(0f,1f);
+            sc.Step();
             Move();
             PoseControl();
             Debug.Log("Beat, Pose: " + pose);
@@ -50,6 +55,20 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        SceneManager.LoadScene("Main");
+        ResetPosition();
+    }
+
+    public void ResetPosition()
+    {
+        transform.position = new Vector3(0,0,0);
+        if (death == 0)
+        {
+            death = 1;
+        }
+        else
+        {
+            death = 0;
+        }
+        sc.Death();
     }
 }

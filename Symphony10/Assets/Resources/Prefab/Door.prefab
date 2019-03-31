@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7399817673984260437}
   - component: {fileID: 2725474064351474810}
   - component: {fileID: 5160756964786212650}
+  - component: {fileID: 2718938973074215096}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1026195329886980161}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -5, z: 0}
-  m_LocalScale: {x: 8, y: 10, z: 1}
+  m_LocalScale: {x: 8, y: 10, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -105,10 +106,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   master: {fileID: 0}
-  maxJump: 0
+  maxJump: -1
   curJump: 0
   minJump: -6
   t: 0
   fadeSpeed: 1.5
   jumpNoise: 0
   canJump: 0
+--- !u!114 &2718938973074215096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026195329886980161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/Obstacles/Walls Below
+  PlayEvent: 1
+  StopEvent: 0
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

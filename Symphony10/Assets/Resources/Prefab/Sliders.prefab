@@ -1,5 +1,58 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &371687710
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 371687712}
+  - component: {fileID: 371687711}
+  m_Layer: 0
+  m_Name: Opener
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &371687712
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371687710}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4, y: -1.0013087, z: -40}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8131876156010496165}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &371687711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371687710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 676c80b2504c98f4fb13009aa9b560ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bpm: 1
+  tick: 0
+  beat: 0
+  mapEl: {fileID: 4585022899976168066, guid: bcde2e681072f3e42a5ae6f886c47d92, type: 3}
+  size: 10
+  isGenerating: 0
+  beatMax: 0
+  beatCount: 0
+  offBeatBpm: 0.01
+  offBeat: 1
 --- !u!1 &8131876156010496170
 GameObject:
   m_ObjectHideFlags: 0
@@ -29,6 +82,7 @@ Transform:
   m_Children:
   - {fileID: 4233925103705484845}
   - {fileID: 4233925103772081418}
+  - {fileID: 371687712}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44,14 +98,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 383cf45bd08c1364ea0d8518209d18ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  master: {fileID: 0}
-  maxJump: -8
-  curJump: 0
-  minJump: 0
+  master: {fileID: 371687711}
+  maxJump: -4
+  curJump: -4
+  minJump: -8
   t: 0
   fadeSpeed: 0.6
   jumpNoise: 0
   canJump: 0
+  isRepeat: 0
 --- !u!114 &8131876157592117056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,14 +119,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 383cf45bd08c1364ea0d8518209d18ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  master: {fileID: 0}
-  maxJump: 8
-  curJump: 0
-  minJump: 0
+  master: {fileID: 371687711}
+  maxJump: 4
+  curJump: 4
+  minJump: 8
   t: 0
   fadeSpeed: 0.6
   jumpNoise: 0
   canJump: 0
+  isRepeat: 0
 --- !u!1001 &8131876156099002603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87,7 +143,7 @@ PrefabInstance:
     - target: {fileID: 5340097304658550241, guid: 1f004d009d8e82a4eab98fe8c90360ec,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5340097304658550241, guid: 1f004d009d8e82a4eab98fe8c90360ec,
         type: 3}
@@ -169,7 +225,7 @@ PrefabInstance:
     - target: {fileID: 5340097304658550241, guid: 1f004d009d8e82a4eab98fe8c90360ec,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 5340097304658550241, guid: 1f004d009d8e82a4eab98fe8c90360ec,
         type: 3}
@@ -221,8 +277,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5160756964786212650, guid: 1f004d009d8e82a4eab98fe8c90360ec, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f004d009d8e82a4eab98fe8c90360ec, type: 3}
 --- !u!1 &9144556228592860045 stripped
 GameObject:
