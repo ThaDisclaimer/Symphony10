@@ -69,16 +69,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slides
       objectReference: {fileID: 0}
-    - target: {fileID: 6166826895500433848, guid: 5f4f5fb0830e3b44eb25d0a15b4685c1,
-        type: 3}
-      propertyPath: beatMax
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6166826895500433848, guid: 5f4f5fb0830e3b44eb25d0a15b4685c1,
-        type: 3}
-      propertyPath: offBeatBpm
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6166826895500433849, guid: 5f4f5fb0830e3b44eb25d0a15b4685c1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -133,6 +123,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6166826895500433848, guid: 5f4f5fb0830e3b44eb25d0a15b4685c1,
+        type: 3}
+      propertyPath: bpm
+      value: 0.035
+      objectReference: {fileID: 0}
+    - target: {fileID: 6166826895500433848, guid: 5f4f5fb0830e3b44eb25d0a15b4685c1,
+        type: 3}
+      propertyPath: tick
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6166826895500433848, guid: 5f4f5fb0830e3b44eb25d0a15b4685c1,
+        type: 3}
+      propertyPath: beatMax
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6166826895500433848, guid: 5f4f5fb0830e3b44eb25d0a15b4685c1,
+        type: 3}
+      propertyPath: offBeatBpm
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f4f5fb0830e3b44eb25d0a15b4685c1, type: 3}
@@ -234,7 +244,7 @@ PrefabInstance:
     - target: {fileID: 2568918423098973457, guid: 181812e9c61bc604bbd6d3f9fe52b8f3,
         type: 3}
       propertyPath: fadeSpeed
-      value: 0.4
+      value: 0.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 181812e9c61bc604bbd6d3f9fe52b8f3, type: 3}
@@ -319,7 +329,7 @@ PrefabInstance:
     - target: {fileID: 2568918423098973457, guid: 181812e9c61bc604bbd6d3f9fe52b8f3,
         type: 3}
       propertyPath: fadeSpeed
-      value: 0.4
+      value: 0.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 181812e9c61bc604bbd6d3f9fe52b8f3, type: 3}
