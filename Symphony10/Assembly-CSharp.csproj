@@ -60,11 +60,49 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GoogleVR\Scripts\Audio\FmodGvrAudio.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Audio\FmodGvrAudioRoom.cs" />
+    <Compile Include="Assets\ResonanceAudio\Scripts\FmodResonanceAudio.cs" />
+    <Compile Include="Assets\ResonanceAudio\Scripts\FmodResonanceAudioRoom.cs" />
     <Compile Include="Assets\Resources\Scripts\BeatMaker.cs" />
     <Compile Include="Assets\Resources\Scripts\Bouncer.cs" />
     <Compile Include="Assets\Resources\Scripts\Jumper.cs" />
     <Compile Include="Assets\Resources\Scripts\Player.cs" />
+    <Compile Include="Assets\Resources\Scripts\Slider.cs" />
     <Compile Include="Assets\Resources\Scripts\Turner.cs" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\EventFolder\{3b9aa03d-12b8-4a9a-af3a-05aeff05b1d5}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\Event\{2813b2ba-1030-4ed1-a76d-73d5a2690d11}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\ParameterPresetFolder\{af85bab4-17d9-4342-987a-bb8b9f111605}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\AudioFile\{87d7f8be-c465-4c38-b95a-a9c176329520}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\Master.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\AudioFile\{afe15866-ee20-4980-9305-6b6477af83ad}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\Workspace.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\AudioFile\{8a1b8e03-a8ae-423a-92bd-7c094e1fbaba}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\EventFolder\{42652dec-b9ae-4ff6-85a3-bcd2a56be8df}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\Platform\{aaa4989b-57a8-4d82-80c6-243651e377e2}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\EffectPresetFolder\{5d0c87e1-8b4c-459f-a787-9541eb1a8afb}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\ParameterPreset\{b078a051-e9f1-479c-bb75-15aa83ba653a}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\SnapshotGroup\{777575ff-45ca-4e21-9a1c-66a33fe59d40}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\AudioFile\{3a9972da-4e52-4e81-9363-dad2515c145b}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\Tags.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\Bank\{03b8fcf3-f194-454c-8187-0b42e605d3da}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\AudioFile\{7d227b88-b9bb-49db-b583-97888b832377}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\AudioFile\{eb476f71-080e-4b93-9059-b90ab9c7bf5b}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\AudioFile\{e99b21e6-e64f-4fb0-9cd3-656ae5b80797}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\EncodingSetting\{47af33e0-11ec-453b-bb8a-885af2f0dd9e}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\BankFolder\{fed9550a-9de7-495b-b60a-da72f4444752}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\Event\{1541e155-79dd-4efe-ad82-644a0284c246}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\AudioFile\{58c35ef3-8e41-4f57-9e98-9a9957f6c176}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\Asset\{b49b35b9-aeaa-466f-8870-2c4ffcb808d0}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\ParameterPreset\{7a90caba-eca1-4a6e-86ac-003f7d1aba53}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\AudioFile\{dc71360e-05ec-4a31-9164-b5167c53eeb1}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\Return\{390703f9-73bc-4659-a567-a0d34e129ba1}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\Event\{bf2b61be-5561-402d-914c-799402faaf24}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\Event\{2eaea36b-2e95-4c51-ae19-9e4742eda6c8}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\AudioFile\{18d47f3b-ee12-4ba4-a2e0-562f154b5fbd}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\Mixer.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\AudioFile\{8fbf3791-b576-4caf-9f1b-a23fe0aac26e}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\Event\{0b5c340e-7acf-4fd1-a86a-b9df6cbcf936}.xml" />
     <Reference Include="Cinemachine">
       <HintPath>C:/Users/olivi/OneDrive/Dokumente/__Unity Projekte/Symphony10/Symphony10/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
@@ -647,6 +685,12 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{8B612DA3-912A-2DBE-C9B4-5B9AF2339895}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

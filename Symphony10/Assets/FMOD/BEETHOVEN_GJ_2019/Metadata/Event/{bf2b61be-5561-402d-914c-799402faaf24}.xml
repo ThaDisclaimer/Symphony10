@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{bf2b61be-5561-402d-914c-799402faaf24}">
         <property name="name">
-            <value>Blocks Sky</value>
+            <value>Gates</value>
         </property>
         <property name="outputFormat">
             <value>2</value>
@@ -32,6 +32,9 @@
         </relationship>
         <relationship name="timeline">
             <destination>{cbe7612f-e42c-4f1a-97f3-e11a6fbc56ac}</destination>
+        </relationship>
+        <relationship name="banks">
+            <destination>{03b8fcf3-f194-454c-8187-0b42e605d3da}</destination>
         </relationship>
     </object>
     <object class="EventMixer" id="{a6bfaa2f-58ef-4e7e-bd66-da10b3a9d850}">
