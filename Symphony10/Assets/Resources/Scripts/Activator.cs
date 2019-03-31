@@ -5,6 +5,7 @@ using UnityEngine;
 public class Activator : MonoBehaviour
 {
     public GameObject activee;
+    public SoundControl sc;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,7 @@ public class Activator : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        activee.SetActive(true);    
+        activee.SetActive(true);
+        sc.PopUpper();
     }
 }

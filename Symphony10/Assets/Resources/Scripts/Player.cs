@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     public gamestate state;
     public SoundControl sc;
     public float death;
+    public bool isDying;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,12 @@ public class Player : MonoBehaviour
     void Update()
     {
         InputControl();
+
+
+        if (isDying)
+        {
+            ResetPosition();
+        }
     }
     private void FixedUpdate()
     {
@@ -55,11 +62,12 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        ResetPosition();
+        isDying = true;   
     }
 
     public void ResetPosition()
     {
+        isDying = false;
         transform.position = new Vector3(0,0,0);
         if (death == 0)
         {

@@ -32,6 +32,7 @@ public class SoundControl : MonoBehaviour
         playerState = FMODUnity.RuntimeManager.CreateInstance(Music);
         playerState.start();
         btn = FMODUnity.RuntimeManager.CreateInstance(ButtonPress);
+        popup = FMODUnity.RuntimeManager.CreateInstance(PopUp);
     }
 
     // Update is called once per frame
@@ -42,14 +43,11 @@ public class SoundControl : MonoBehaviour
 
     public void Progress()
     {
-        playerState.setParameterValue("Progress", (float)(master.transform.position.z) / 10);
+        playerState.setParameterValue("Progress", (float)(master.transform.position.z) / 20);
     }
     public void Death()
     {
-        if(master.death==1)
-            playerState.setParameterValue("Death", (float)1f);
-        if (master.death == 0)
-            playerState.setParameterValue("Death", (float)0f);
+        playerState.setParameterValue("Death", (float)master.death);
     }
 
     public void Step()

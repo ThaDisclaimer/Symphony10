@@ -79,6 +79,7 @@
     <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\Master.xml" />
     <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\AudioFile\{afe15866-ee20-4980-9305-6b6477af83ad}.xml" />
     <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\Workspace.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\AudioFile\{3873348a-4924-4ad5-81f3-2c03bf02abc5}.xml" />
     <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\AudioFile\{8a1b8e03-a8ae-423a-92bd-7c094e1fbaba}.xml" />
     <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\EventFolder\{42652dec-b9ae-4ff6-85a3-bcd2a56be8df}.xml" />
     <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\Platform\{aaa4989b-57a8-4d82-80c6-243651e377e2}.xml" />
@@ -95,10 +96,14 @@
     <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\BankFolder\{fed9550a-9de7-495b-b60a-da72f4444752}.xml" />
     <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\Event\{1541e155-79dd-4efe-ad82-644a0284c246}.xml" />
     <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\AudioFile\{58c35ef3-8e41-4f57-9e98-9a9957f6c176}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\AudioFile\{ebe7172c-2ffa-428c-8aef-34be17559a61}.xml" />
     <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\Asset\{b49b35b9-aeaa-466f-8870-2c4ffcb808d0}.xml" />
     <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\ParameterPreset\{7a90caba-eca1-4a6e-86ac-003f7d1aba53}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\Event\{9ff43637-7639-4861-848d-c9b6bbf48422}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\ParameterPreset\{10eec7a0-d963-41ed-b79b-985b4afbe158}.xml" />
     <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\AudioFile\{dc71360e-05ec-4a31-9164-b5167c53eeb1}.xml" />
     <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\Return\{390703f9-73bc-4659-a567-a0d34e129ba1}.xml" />
+    <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\Event\{2f7f0f44-d311-41cc-bfbe-20fd94cad5ae}.xml" />
     <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\Event\{bf2b61be-5561-402d-914c-799402faaf24}.xml" />
     <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\Event\{2eaea36b-2e95-4c51-ae19-9e4742eda6c8}.xml" />
     <None Include="Assets\FMOD\BEETHOVEN_GJ_2019\Metadata\AudioFile\{18d47f3b-ee12-4ba4-a2e0-562f154b5fbd}.xml" />

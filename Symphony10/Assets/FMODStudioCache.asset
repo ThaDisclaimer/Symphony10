@@ -21,9 +21,11 @@ MonoBehaviour:
   - {fileID: 114740821130806494}
   - {fileID: 114135842129685522}
   - {fileID: 114764228251063488}
+  - {fileID: 114391620142043696}
+  - {fileID: 114997696112193166}
   MasterBankRef: {fileID: 114130720709414658}
   StringsBankRef: {fileID: 114984946347742512}
-  stringsBankWriteTime: 636896326124717018
+  stringsBankWriteTime: 636896354846443164
   cacheVersion: 2
 --- !u!114 &114012963061996152
 MonoBehaviour:
@@ -71,11 +73,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Git\Symphony10\Symphony10\Assets\FMOD\BEETHOVEN_GJ_2019\Build\Desktop\Master
     Bank.bank
-  lastModified: 636896326124687097
+  lastModified: 636896354846383867
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1487872
+    Value: 1536512
   Exists: 1
 --- !u!114 &114135842129685522
 MonoBehaviour:
@@ -100,6 +102,61 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 22400
+--- !u!114 &114158274868676148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Death
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114198236597787242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Start Menu
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114391620142043696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Start Game
+  guid: 3736f49f39766148848dc9b6bbf48422
+  Banks:
+  - {fileID: 114130720709414658}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1600
 --- !u!114 &114450929249687006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,8 +255,9 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114472698180142676}
-  - {fileID: 114057382522695110}
+  - {fileID: 114198236597787242}
+  - {fileID: 114872279538296366}
+  - {fileID: 114158274868676148}
   MinDistance: 0
   MaxDistance: 0
   Length: 20800
@@ -269,6 +327,22 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1487872
   Exists: 1
+--- !u!114 &114872279538296366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Progress
+  Min: 0
+  Max: 2
+  Default: 0
 --- !u!114 &114984946347742512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,9 +356,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\FMOD\BEETHOVEN_GJ_2019\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636896326124717018
+  lastModified: 636896354846443164
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 916
+    Value: 994
   Exists: 1
+--- !u!114 &114997696112193166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Obstacles/Sliders
+  guid: 440f7f2f11d3cc41bfbe20fd94cad5ae
+  Banks:
+  - {fileID: 114130720709414658}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2400
